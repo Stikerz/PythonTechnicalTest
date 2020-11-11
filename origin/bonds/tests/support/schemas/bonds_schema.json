@@ -1,0 +1,38 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Get Bonds Response Schema",
+  "type": ["array","object"],
+  "properties": {
+    "user": {
+      "type": "number"
+    },
+    "isin": {
+      "type": "string"
+    },
+    "size": {
+      "type": "number"
+    },
+    "currency": {
+      "type": "string"
+    },
+    "maturity": {
+      "type": "string"
+    },
+    "lei": {
+      "type": "string"
+    },
+    "legal_name": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "user",
+    "isin",
+    "size",
+    "currency",
+    "maturity",
+    "lei",
+    "legal_name"
+  ],
+  "additionalProperties": false
+}
