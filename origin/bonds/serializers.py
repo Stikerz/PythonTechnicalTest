@@ -44,6 +44,36 @@ class BondSerializer(ModelSerializer):
             "legal_name": {"read_only": True},
         }
 
+    def validate_isin(self, value):
+        """
+        Check that ISIN is 12 digits.
+        """
+        size = len(value)
+        if size != 12:
+            raise serializers.ValidationError(
+                f"Error: ISIN needs to be of length 12 not {size}"
+            )
+        return value
+
+    def validate_size(self, value):
+        """
+        Check that Size is 0 or more.
+        """
+        if value <= 0:
+            raise serializers.ValidationError("Error: Size cannot be of size 0 or less")
+        return value
+
+    def validate_lei(self, value):
+        """
+        Check that LEI is 20 digits.
+        """
+        size = len(value)
+        if size != 20:
+            raise serializers.ValidationError(
+                f"Error: LEI needs to be of length 20 not {size}"
+            )
+        return value
+
     def create(self, validated_data):
         user = None
         request = self.context.get("request")
