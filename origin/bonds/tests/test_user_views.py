@@ -14,9 +14,7 @@ class UserViewTest(TestCase):
         user_instance.save()
 
     def login(self) -> bool:
-        user_login = self.client.login(
-            username=USERS[0]["username"], password="gamora"
-        )
+        user_login = self.client.login(username=USERS[0]["username"], password="gamora")
         return user_login
 
     def test_create_valid_user(self):
