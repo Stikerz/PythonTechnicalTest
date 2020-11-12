@@ -47,7 +47,7 @@ To check we are on the right Python version
  makemigrations
 ` then
  `python manage.py
- makemigrations
+ migrate
 ` in the origin directory
 
 - You can then run the server command with `python manage.py runserver`
