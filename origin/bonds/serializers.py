@@ -1,8 +1,9 @@
-from bonds.models import Bond
 from django.contrib.auth.models import User
 from rest_framework import serializers
 from rest_framework.fields import CurrentUserDefault
-from rest_framework.serializers import ModelSerializer, DateField
+from rest_framework.serializers import DateField, ModelSerializer
+
+from bonds.models import Bond
 
 
 class UserSerializer(ModelSerializer):
