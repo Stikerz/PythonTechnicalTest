@@ -43,4 +43,11 @@ BONDS = [
         "maturity": "",
         "lei": "",
     },
+    {
+        "isin": "r54545",
+        "size": -1,
+        "currency": "EUR",
+        "maturity": "2020-11-21",
+        "lei": "fdfdfdfdf",
+    },
 ]
