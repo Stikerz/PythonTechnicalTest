@@ -14,8 +14,6 @@ This project was written using python3.7. A requirements
  
 - Build & Run the image: `docker-compose up --build`
 
-- Start using web app: `http://localhost:4200/`
-
 - Check Django backend server `http://localhost:8000/`
 
 ## Running with a virtual environment 
@@ -70,7 +68,7 @@ To check we are on the right Python version
 - Get/Post User : origins/users/
 
 ## Testing
-- Run python manage.py test origin.bonds.tests # Run test
+- Run `python manage.py test origin.bonds.tests` 
 
 
 ## Coverage 
